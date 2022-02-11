@@ -7,7 +7,7 @@ const app = express();
 
 app.use(express.static("public")); //to get html path
 
-let port=5000;
+let port=process.env.PORT || 5000;
 let server=app.listen(port,() => {
     console.log("Listening " + port);
 })
