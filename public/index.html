@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="icons/favicon-32x32.png">
+    <title>ShareBoard</title>
+</head>
+
+<body>
+    <div class="options">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="tools scale-tools">
+        <img class="penc tsn" src="icons/pencil-svgrepo-com.svg">
+        <img class="eras tsn" src="icons/eraser.png">
+        <img class="undo tsn" src="icons/undo-s-svgrepo-com.svg">
+        <img class="redo tsn" src="icons/redo-s-svgrepo-com.svg">
+        <img class="sticky tsn" src="icons/post-it.png">
+        <img class="downl tsn" src="icons/download-svgrepo-com.svg">
+        <img class="upl tsn" src="icons/photo.png">
+    </div>
+    <div class="pentool">
+        <div class="pensize">
+            <input type="range" min="1" max="9" value="3" class="pen-width">
+        </div>
+        <div class="pencolor">
+            <div class="black pen-col"></div>
+            <div class="orange pen-col"></div>
+            <div class="blue pen-col"></div>
+        </div>
+    </div>
+    <div class="erasetool">
+        <div class="erasesize">
+            <input type="range" min="1" max="9" value="3" class="erase-width">
+        </div>
+    </div>
+    <canvas></canvas>
+    <script src="https://cdn.socket.io/4.4.1/socket.io.min.js" integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous"></script>
+    <script>
+        let socket=io.connect("https://share-board-mu.vercel.app/");
+    </script>
+    <script src="script.js"></script>
+    <script src="canvas.js"></script>
+</body>
+
+</html>

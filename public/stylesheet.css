@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.options {
+  border-radius: 50%;
+  font-size: 1.5rem;
+  height: 4rem;
+  width: 4rem;
+  background-color: lightgrey;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
+}
+img {
+  display: block;
+}
+.tools {
+  display: flex;
+  height: 5rem;
+  width: 55vw;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
+  position: absolute;
+  top: 2rem;
+  left: 25vw;
+}
+.tools > * {
+  display: block;
+  width: 5rem;
+}
+.tsn:hover{
+  transform: scale(0.8);
+}
+.pentool {
+  position: absolute;
+  top: 7rem;
+  left: 25vw;
+  height: 5rem;
+  width: 8rem;
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+  border-radius: 5px;
+  display: none;
+}
+.pen-col:hover{
+  cursor: pointer;
+}
+.pensize input {
+  width: 90%;
+}
+.pensize {
+  background-color: whitesmoke;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pencolor {
+  background-color: whitesmoke;
+  height: calc(100%-2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.pen-col {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.black {
+  background-color: black;
+  border-radius: 50%;
+}
+.orange {
+  background-color: orange;
+  border-radius: 50%;
+}
+.blue {
+  background-color: blue;
+  border-radius: 50%;
+}
+.erasetool input {
+  width: 90%;
+}
+.erasetool {
+  position: absolute;
+  height: 2rem;
+  width: 7rem;
+  display: none;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 7rem;
+  left: 34.5vw;
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+  border-radius: 5px;
+}
+.stickycont {
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+  top: 15rem;
+  left: 10rem;
+  background-color: lightgrey;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+}
+.headercont {
+  height: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: whitesmoke;
+}
+.headercont > * {
+  height: 1.3rem;
+  width: 1.3rem;
+  margin-right: 0.5rem;
+}
+.note {
+  height: calc(100% - 2rem);
+  background-color: whitesmoke;
+}
+textarea {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  resize: none;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+.minimise {
+  background-color: rgb(88, 235, 59);
+  border-radius: 50%;
+}
+.remove {
+  background-color: red;
+  border-radius: 50%;
+}
+.scale-tools {
+  animation-name: scale-tools;
+  animation-duration: 1s;
+}
+@keyframes scale-tools {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
