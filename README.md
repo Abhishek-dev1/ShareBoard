@@ -1,2 +1,2 @@
 # ShareBoard
-[ShareBoard](https://myshareboard.netlify.app/)
+[ShareBoard](https://shareboard-production.up.railway.app/)
